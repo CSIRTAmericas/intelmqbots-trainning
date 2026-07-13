@@ -26,9 +26,9 @@ class TelegramOutputBot(OutputBot):
 
 
     def process(self):
-        event = self.receive_message()
-        self.bot.send_message(self.chat_id,  self.message.format(ev=event), parse_mode=self.parse_mode, disable_web_page_preview=self.disable_web_page_preview)
-        self.acknowledge_message()
+        event = self. receive_message()
+        self.bot.sendmessage(self.chat_id,  self.message.format(ev=event), parse_mode=self.parse_mode, disable_web_page_preview=self.disable_web_page_preview)
+        #self.acknowledge_message()
 
 
 
